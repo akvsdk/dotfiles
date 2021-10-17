@@ -107,17 +107,39 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-[ -f ~/.shrc.local ]
-source ~/.shrc.local
-
 alias vim="nvim"
 
 # proxy list
-alias proxy='export all_proxy=socks5://127.0.0.1:1086'
+alias proxy='export all_proxy=socks5://192.168.6.2:1080'
 alias unproxy='unset all_proxy'
 
 # auto correct
 zstyle ':completion:incremental:*' completer _complete _correct
 zstyle ':completion:*' completer _complete _prefix _correct _prefix _match _approximate
 
+# Trash
+
 eval $(thefuck --alias)
+
+# 带颜色的ls，并显示目录／
+alias ls='ls -Gp'
+# 显示B/KB/MB大小
+# alias ll='ls -lh'
+# alias la='ls -lah'
+
+# 快速返回到父目录
+alias ..='cd ..'
+alias ...='cd ../../'
+
+# 加入颜色输出，在搜索log文件时很有用
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+#自用
+alias brin='brew install'
+alias brun='brew uninstall'
+alias gc='git clone'
+alias rm='trash'
+
+source ~/.bash_profile

@@ -1,6 +1,6 @@
 [user]
-	name = rf.wu
-	email = demonsimon@gmail.com
+	name = J1ang
+	email = dkvsak@gmail.com
 [color]
 	ui = true
 [alias]
@@ -21,7 +21,7 @@
 	tool = ksdiff
 [core]
 	autocrlf = input
-	excludesfile = /Users/meow/.gitignore_global
+	excludesfile = /Users/j1ang/.gitignore_global
 	filemode = false
 [difftool "ksdiff"]
 	cmd = ksdiff \"$LOCAL\" \"$REMOTE\"

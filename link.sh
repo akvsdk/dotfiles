@@ -21,11 +21,11 @@ if [ -f ~/.zshrc ]; then
     mv ~/.zshrc ~/.zshrc.orig
 fi
 
-ln -sf $PWD/vim/_vimrc ~/.vimrc
-mkdir -p ~/.vim/
-ln -sf $PWD/vim/plugins.vim ~/.vim/plugins.vim
-mkdir -p ~/.config/nvim/
-ln -sf $PWD/vim/nvim/init.vim ~/.config/nvim/
+# ln -sf $PWD/vim/_vimrc ~/.vimrc
+# mkdir -p ~/.vim/
+# ln -sf $PWD/vim/plugins.vim ~/.vim/plugins.vim
+# mkdir -p ~/.config/nvim/
+# ln -sf $PWD/vim/nvim/init.vim ~/.config/nvim/
 
 ln -sf $PWD/git/_git-completion.bash ~/.git-completion.bash
 ln -sf $PWD/git/_gitconfig ~/.gitconfig
