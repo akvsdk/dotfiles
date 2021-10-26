@@ -233,5 +233,6 @@ alias gc='git clone'
 alias rm='trash'
 alias jdk11='sdk default java 11.0.11.j9-adpt'
 alias jdk8='sdk default java 8.0.292.j9-adpt'
-
+alias adbtop="adb shell dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'"
+alias adbi="adb install"
 source ~/.bash_profile
